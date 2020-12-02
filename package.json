@@ -1,0 +1,19 @@
+{
+  "name": "material-ui-components",
+  "version": "1.0.0",
+  "description": "Custom React components built on Material-IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Oskamp",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozzyonfire/material-ui-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ozzyonfire/material-ui-components/issues"
+  },
+  "homepage": "https://github.com/ozzyonfire/material-ui-components#readme"
+}
