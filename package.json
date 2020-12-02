@@ -1,10 +1,12 @@
 {
   "name": "material-ui-components",
   "version": "1.0.0",
-  "description": "Custom React components built on Material-IO",
+  "description": "Custom React components built on Material-UI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon -w ./src --exec babel src --out-dir dist"
   },
   "author": "Matt Oskamp",
   "license": "ISC",
@@ -22,5 +24,17 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "nodemon": "^2.0.6"
   }
 }

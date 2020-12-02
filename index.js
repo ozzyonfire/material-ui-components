@@ -1,5 +1,1 @@
-import Button from './components/Button.js';
-
-module.exports = {
-	Button
-}
+module.exports = require('./dist');
