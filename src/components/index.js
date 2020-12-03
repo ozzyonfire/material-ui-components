@@ -6,5 +6,10 @@ import Table from './Table.js';
 import Toast from './Toast.js';
 
 export {
-	Button
-}
+	Button,
+	CustomDialog,
+	DropDown,
+	LoadingScreen,
+	Table,
+	Toast
+};

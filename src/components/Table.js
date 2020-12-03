@@ -21,7 +21,15 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function CustomTable(props) {
-	const { headers, sortHeaders, rows, style, hover, alignHeader, ...other } = props;
+	const { 
+		headers, 
+		sortHeaders, 
+		rows, 
+		style, 
+		hover, 
+		alignHeader, 
+		...other 
+	} = props;
 	const classes = useStyles();
 	const [orderBy, setOrderBy] = useState(null);
 	const [direction, setDirection] = useState('asc');
