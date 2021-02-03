@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = CustomDialog;
 
+var _react = _interopRequireDefault(require("react"));
+
 var _core = require("@material-ui/core");
 
 var _Button = _interopRequireDefault(require("./Button"));
@@ -25,15 +27,15 @@ function CustomDialog(props) {
       actions = props.actions,
       other = _objectWithoutProperties(props, ["open", "onClose", "title", "children", "actions"]);
 
-  return /*#__PURE__*/React.createElement(_core.Dialog, {
+  return /*#__PURE__*/_react["default"].createElement(_core.Dialog, {
     onClose: onClose,
     open: open
-  }, /*#__PURE__*/React.createElement(_core.DialogTitle, null, title), /*#__PURE__*/React.createElement(_core.DialogContent, null, children), actions && /*#__PURE__*/React.createElement(_core.DialogActions, null, actions.map(function (action, index) {
+  }, /*#__PURE__*/_react["default"].createElement(_core.DialogTitle, null, title), /*#__PURE__*/_react["default"].createElement(_core.DialogContent, null, children), actions && /*#__PURE__*/_react["default"].createElement(_core.DialogActions, null, actions.map(function (action, index) {
     var title = action.title,
         onClick = action.onClick,
         other = _objectWithoutProperties(action, ["title", "onClick"]);
 
-    return /*#__PURE__*/React.createElement(_Button["default"], _extends({
+    return /*#__PURE__*/_react["default"].createElement(_Button["default"], _extends({
       key: 'button-' + index,
       onClick: onClick
     }, other), title);
